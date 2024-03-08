@@ -14,7 +14,12 @@ public class Paciente extends Usuario{
     private TipoSangre tipoSangre;
     private char factoRH;
 
-    
+    @Override
+    public String toString() {
+        return "Paciente [email=" + email + ", celular=" + celular + ", fechaNacimiento=" + fechaNacimiento
+                + ", altura=" + altura + ", peso=" + peso + ", tipoSangre=" + tipoSangre + ", factoRH=" + factoRH + "]";
+    }
+
     public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroIdentificacion) {
         super(id, nombres, apellidos, tipoDocumento, numeroIdentificacion);
     }

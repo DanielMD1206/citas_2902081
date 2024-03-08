@@ -16,28 +16,28 @@ import org.ptech.java.citas.entities.enums.TipoSangre;
 public class Main {
     public static void main(String[] args) {
 
-        Medico m1 = new Medico(18, "Alexix", "Audor", TipoDocumento.TI, 1016952406L, 323232L, Especialidad.MEDICINA_GENERAL);
-        System.out.println( "============ MEDICO ============" + "\n" + "Id del medico es: " + m1.getId() + "\n" + "Nombre del medico: " + m1.getNombres() +  "\n" + "Apellido del medico: " + m1.getApellidos() + "\n" + "Especialidad del medico:  " + m1.getEspecialidad());
+        Medico m1 = new Medico(18, "Alexix", "Audor", TipoDocumento.TI, 1016952406L, 323232L,
+                Especialidad.MEDICINA_GENERAL);
+        System.out.println("======================== MEDICO ========================" + "\n" + "Id del medico es: "
+                + m1.getId() + "\n" + "Nombre del medico: " + m1.getNombres() + "\n" + "Apellido del medico: "
+                + m1.getApellidos() + "\n" + "Especialidad del medico:  " + m1.getEspecialidad());
 
-
-        Enfermero e1 = new Enfermero(12, "Daniel", "Gallo", TipoDocumento.TI, 1019028401L);
+        Enfermero e1 = new Enfermero(17, "Daniel", "Gallo", TipoDocumento.TI, 1019028401L);
         e1.addProcedure("Aplicar inyecciones");
         e1.addProcedure("Lavado de oidos");
 
-        System.out.println("========= ENFERMERO 1 ==========");
-        for(String f: e1.getProcedimiento()){
-            System.out.println("Procedimientos del enfermero 1: " + f );
+        System.out.println("====================== ENFERMERO 1 ======================");
+        for (String f : e1.getProcedimiento()) {
+            System.out.println("Procedimientos del enfermero 1: " + f);
         }
+        Enfermero e2 = new Enfermero(1, "Danner", "Ariaz", TipoDocumento.TI, 10190219821L);
+        e2.addProcedure("Revisio de prostata");
+        e2.addProcedure("Amputaciones");
         
-
-        Enfermero e2 = new Enfermero(11, "Danner", "Arias", TipoDocumento.TI, 10290192831L);
-        e2.addProcedure("Revision de prostata");
-        e2.addProcedure("Reviision de tension");
-        
-        System.out.println("========= ENFERMERO 2 ==========");
-        for(String n : e2.getProcedimiento()){
+        System.out.println("====================== ENFERMERO 2 ======================");
+        for (String n : e2.getProcedimiento()) {
             System.out.println("Procedimientos del enfermero 2: " + n);
         }
-        
+
     }
 }

@@ -7,5 +7,6 @@ public interface IAgendable {
 
     public boolean agendarCita(LocalDateTime fecha, Consultorio consultorio);
     public boolean reAendarCita( LocalDateTime nuevaFecha, Consultorio nuevoConsultorio);
+    public boolean cancelarCita( LocalDateTime cancelarFecha, Consultorio cancelarConsultorio);
     
 }

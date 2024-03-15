@@ -37,10 +37,4 @@ public class Consultorio {
     public void setNumero(int numero) {
         this.numero = numero;
     }
-
-
-    
-
-
-    
 }
